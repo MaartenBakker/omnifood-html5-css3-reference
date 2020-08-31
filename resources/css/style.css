@@ -149,7 +149,8 @@ a:active {
 /*--------BUTTONS--------*/
 
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type="submit"] {
   display: inline-block;
   padding: 10px 30px;
   font-weight: 300;
@@ -160,7 +161,8 @@ a:active {
 }
 
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type="submit"] {
   background-color: #e67e22;
   color: #fff;
   margin-right: 15px;
@@ -172,7 +174,9 @@ a:active {
 }
 
 .btn:hover,
-.btn:active {
+.btn:active,
+input[type="submit"]:hover,
+input[type="submit"]:active {
   background-color: #cf6d17;
   border: 1px solid #cf6d17;
   /* transform: translate(0, 2px); */
@@ -384,6 +388,8 @@ blockquote {
   line-height: 145%;
   position: relative;
   margin-top: 40px;
+  text-align: justify;
+  text-justify: inter-character;
 }
 
 blockquote:before {
@@ -421,15 +427,18 @@ cite img {
   border-radius: 5px;
   width: 90%;
   margin-left: 5%;
+  box-shadow: 0 2px 2px #efefef;
 }
 
 .plan-box div {
   padding: 15px;
-  border-bottom: 1px solid #e8e8e8;
+  border-bottom: 1px solid #efefef;
 }
 
 .plan-box div:first-child {
   background-color: #f8f8f8;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
 }
 
 .plan-box div:last-child {
@@ -459,4 +468,116 @@ cite img {
 
 .plan-box ul li {
   padding: 5px 0;
+}
+
+/*--------------------------------------------------*/
+/* FORM */
+/*--------------------------------------------------*/
+
+.contact-form {
+  width: 60%;
+  margin: 0 auto;
+}
+input[type="submit"] {
+  cursor: pointer;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 7px;
+  border-radius: 3px;
+  border: solid 1px #ccc;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+textarea {
+  height: 100px;
+}
+
+input[type="checkbox"] {
+  margin: 10px 5px 10px 0;
+}
+
+*:focus {
+  outline: none;
+}
+
+/*--------------------------------------------------*/
+/* FOOTER */
+/*--------------------------------------------------*/
+
+footer {
+  background-color: rgb(29, 29, 29);
+  padding: 30px 0 50px 0;
+}
+
+footer ul {
+  list-style: none;
+}
+
+.footer-nav {
+  float: left;
+}
+
+.social-icons {
+  float: right;
+}
+
+.footer-nav li,
+.social-icons li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-icons li:last-child {
+  margin: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-icons li a:link,
+.social-icons li a:visited {
+  border: 0;
+  color: #888;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+  color: rgb(204, 204, 204);
+  padding-bottom: 4px;
+  border-bottom: solid 1px;
+}
+
+.social-icons li a ion-icon {
+  transition: color 0.2s;
+  font-size: 140%;
+}
+
+.social-icons li a:hover ion-icon[name="logo-facebook"],
+.social-icons li a:active ion-icon[name="logo-facebook"] {
+  color: #1877f2;
+}
+.social-icons li a:hover ion-icon[name="logo-twitter"],
+.social-icons li a:active ion-icon[name="logo-twitter"] {
+  color: #1da1f2;
+}
+.social-icons li a:hover ion-icon[name="logo-instagram"],
+.social-icons li a:active ion-icon[name="logo-instagram"] {
+  color: #c32aa3;
+}
+.social-icons li a:hover ion-icon[name="logo-tiktok"],
+.social-icons li a:active ion-icon[name="logo-tiktok"] {
+  color: #ee1d52;
+}
+
+footer p {
+  margin-top: 20px;
+  font-size: 80%;
+  color: rgb(104, 104, 104);
 }
