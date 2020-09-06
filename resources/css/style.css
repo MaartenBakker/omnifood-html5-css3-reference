@@ -14,7 +14,7 @@ Orange color: #e67e22
 html,
 body {
   color: #555;
-  font-family: "Lato", "Arial", sans-serif;
+  font-family: 'Lato', 'Arial', sans-serif;
   font-size: 20px;
   font-weight: 300;
   text-rendering: optimizeLegibility;
@@ -25,7 +25,7 @@ body {
   zoom: 1;
 }
 .clearfix:after {
-  content: " ";
+  content: ' ';
   clear: both;
   display: block;
   height: 0;
@@ -79,7 +79,7 @@ h2:after {
   display: block;
   height: 2px;
   background-color: #e67e22;
-  content: " ";
+  content: ' ';
   width: 100px;
   margin: 30px auto 0 auto;
 }
@@ -152,7 +152,7 @@ a:active {
 
 .btn:link,
 .btn:visited,
-input[type="submit"] {
+input[type='submit'] {
   display: inline-block;
   padding: 10px 30px;
   font-weight: 300;
@@ -164,7 +164,7 @@ input[type="submit"] {
 
 .btn-full:link,
 .btn-full:visited,
-input[type="submit"] {
+input[type='submit'] {
   background-color: #e67e22;
   color: #fff;
   margin-right: 15px;
@@ -177,8 +177,8 @@ input[type="submit"] {
 
 .btn:hover,
 .btn:active,
-input[type="submit"]:hover,
-input[type="submit"]:active {
+input[type='submit']:hover,
+input[type='submit']:active {
   background-color: #cf6d17;
   border: 1px solid #cf6d17;
   /* transform: translate(0, 2px); */
@@ -221,6 +221,12 @@ header {
   float: left;
 }
 
+.logo-black {
+  display: none;
+}
+
+/* Main navigation */
+
 .main-nav {
   margin-top: 55px;
   float: right;
@@ -248,12 +254,55 @@ header {
   border-bottom: 2px solid #e67e22;
 }
 
+/* Sticky navigation */
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 2px #efefef;
+  z-index: 9999;
+}
+
+.sticky .main-nav {
+  margin-top: 20px;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+  padding: 20px 0;
+  color: #555;
+}
+
+.sticky .logo {
+  display: none;
+}
+.sticky .logo-black {
+  display: inline-block;
+  margin: 5px 0;
+  height: 50px;
+  width: auto;
+}
+
 /*--------------------------------------------------*/
 /* FEATURES */
 /*--------------------------------------------------*/
 
 .section-features .long-copy {
   margin-bottom: 30px;
+}
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+  opacity: 0;
+  animation-duration: 1s;
+}
+
+.js--wp-4 {
+  animation-duration: 1s;
 }
 
 /*--------------------------------------------------*/
@@ -394,7 +443,7 @@ blockquote {
 }
 
 blockquote:before {
-  content: "\201C";
+  content: '\201C';
   font-size: 500%;
   display: block;
   position: absolute;
@@ -479,12 +528,12 @@ cite img {
   width: 60%;
   margin: 0 auto;
 }
-input[type="submit"] {
+input[type='submit'] {
   cursor: pointer;
 }
 
-input[type="text"],
-input[type="email"],
+input[type='text'],
+input[type='email'],
 select,
 textarea {
   width: 100%;
@@ -500,7 +549,7 @@ textarea {
   height: 100px;
 }
 
-input[type="checkbox"] {
+input[type='checkbox'] {
   margin: 10px 5px 10px 0;
 }
 
@@ -560,20 +609,20 @@ footer ul {
   font-size: 140%;
 }
 
-.social-icons li a:hover ion-icon[name="logo-facebook"],
-.social-icons li a:active ion-icon[name="logo-facebook"] {
+.social-icons li a:hover ion-icon[name='logo-facebook'],
+.social-icons li a:active ion-icon[name='logo-facebook'] {
   color: #1877f2;
 }
-.social-icons li a:hover ion-icon[name="logo-twitter"],
-.social-icons li a:active ion-icon[name="logo-twitter"] {
+.social-icons li a:hover ion-icon[name='logo-twitter'],
+.social-icons li a:active ion-icon[name='logo-twitter'] {
   color: #1da1f2;
 }
-.social-icons li a:hover ion-icon[name="logo-instagram"],
-.social-icons li a:active ion-icon[name="logo-instagram"] {
+.social-icons li a:hover ion-icon[name='logo-instagram'],
+.social-icons li a:active ion-icon[name='logo-instagram'] {
   color: #c32aa3;
 }
-.social-icons li a:hover ion-icon[name="logo-tiktok"],
-.social-icons li a:active ion-icon[name="logo-tiktok"] {
+.social-icons li a:hover ion-icon[name='logo-tiktok'],
+.social-icons li a:active ion-icon[name='logo-tiktok'] {
   color: #ee1d52;
 }
 
