@@ -60,8 +60,42 @@
     margin: 0 0 4% 0;
   }
 
-  /* .main-nav { display: none; } */
-  .mobile-nav-icon {display: inline-block}
+  .main-nav { display: none; }
+  .mobile-nav-icon { display: inline-block}
+
+  .main-nav {
+    float: left;
+    margin-top: 35px;
+    margin-left: 25px;
+  }
+
+  .main-nav li {
+    display: block;
+  }
+ 
+  .main-nav li a:link,
+  .main-nav li a:visited {
+    display: block;
+    padding: 10px 0; 
+    font-size: 100%;
+    border: 0;
+  }
+
+  .sticky .main-nav { margin-top: 10px; }
+  
+  .sticky .main-nav li a:link,
+  .sticky .main-nav li a:visited { padding: 10px 0; }
+  
+  .sticky .logo-black {
+    float: left;
+    margin: 20px 0;
+    height: 50px;
+    width: auto;
+  }
+
+  .sticky .mobile-nav-icon { margin-top: 10px; }
+  .sticky .mobile-nav-icon ion-icon { color: #555; }
+  
 
   h1 { font-size: 180%; }
   h2 { font-size: 150%; }
